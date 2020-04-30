@@ -16,8 +16,7 @@ set showcmd
 set showmode
 
 " Activate the pathogen plugin manager
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+execute pathogen#infect()
 
 " Options for various filetypes and recognition
 filetype plugin indent on
@@ -33,3 +32,6 @@ autocmd FileType python setlocal shiftwidth=4
 
 " Insert 4 spaces when using Tab key
 autocmd FileType python setlocal expandtab
+
+" Syntax highlighting: turned ON
+syntax on
