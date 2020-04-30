@@ -15,6 +15,10 @@ set ruler
 set showcmd
 set showmode
 
+" Activate the pathogen plugin manager
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 " Options for various filetypes and recognition
 filetype plugin indent on
 
